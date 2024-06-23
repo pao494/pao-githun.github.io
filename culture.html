@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>民俗文化</title>
+		<style>
+			* {
+			    margin: 0;
+			    padding: 0;
+			    list-style: none;
+			    text-decoration: none;
+			}
+			body{
+				background-image:url("img/s1.jpg");
+				background-size: cover;
+			}
+			#header{
+				height: 135px;	
+			}
+			#header #logo{
+			     height: 100px;
+			     width:100%;
+				background-color: rgb(144,116,102);
+						}
+			#header #topbar{
+				height: 35px;	
+				} 
+			.box {
+				position: relative;      /* 相对定位 */				
+				width: 100%;
+				height: 40px;
+				line-height: 30px;
+				background-color: #705934;
+				margin: 20px auto;
+				overflow: hidden;        /* 溢出内容隐藏 */				
+				}
+			.box ul {
+				position: absolute;      /* 绝对定位 */				
+				left: 0;
+				top: 0;
+				}
+			.box ul li {
+				float: left;
+				margin-right: 15px;      /* 让每个条目右侧空15px */				
+				color: #ffffff;
+				font-size: 18px;
+				margin-top: 8px;
+				}
+			#logo .wrap  {
+				height:100%;
+				width: 100%;						
+				} 
+			#container #nav{
+				background: rgb(144,116,102);								
+			    width: 100%;
+				}						
+			#nav ul li a{
+				position: relative;
+				bottom:70px;
+				 left:250px;
+			    display: block;
+			    height: 100%;
+			    padding: 0 22px;
+			    line-height: 55px;
+			    text-align: center;
+			    color: aliceblue;
+				font-size: 20px;
+			}					
+			#nav ul{
+			    height: 100%;
+			    margin-left: 1%;
+			}
+			#nav ul li{
+			    position: relative;
+			    float: left;
+			}
+			#nav ul li a:hover{
+				color:  #CFB09A;
+			} 
+			#nav ul li .sp{
+			    position: absolute;
+			    width: 100%;
+			    height: 40px;
+			    display: none;
+				z-index:10;
+			}
+			#nav ul li .sp a{
+			    line-height: 40px;
+			    background-color: rgba(144,116,102,0.9);
+			
+			}
+			#nav ul li:hover>.sp{
+			    display: block;
+			}
+			#footer {
+			    display: flex;
+			    width: 100%;
+			    height: 80px;
+			    align-items: center;/* 针对每个子项都居中 */
+			    justify-content: center;
+			    background-color:rgb(144,116,102);
+			}
+			#footer p{
+			    text-align: center;
+			}
+			#footer a{
+			    color: #000;
+			}
+			#footer a:hover{
+			    text-decoration: underline;
+			}	
+			#header #search{
+				position: absolute;
+				left:0;
+				right: 0;
+				width: 400px;
+				margin:-60px 930px; 
+				opacity: 80%;
+			}
+			 #header #search_text{
+				font-family: "myfont1";
+				font-size: 16px;
+				height: 30px;
+				width: 300px;
+				padding-left:10px;
+				outline: none;
+				border: 1px solid #ccc;
+			}
+			 #search .button{
+				width:90px;
+				height:35px;
+				position: absolute;
+				top:10%;
+				left: 50%;
+				margin:-5px 110px;
+				 color:#666;
+				background-color: #fff;
+				font-size: 20px;
+				 border:1px solid #C8E0C8;
+				/* cursor: pointer; */
+			}		
+			#search .button:hover{
+				background-color: #d7b9b1;
+				color:#fff;
+			}
+			
+			.banner{
+			    width: 90%;
+			   /* height: 600px; */
+			    margin:0 auto;
+				position: relative;
+				overflow: hidden;
+				 bottom:35px;
+			}
+			.zhuti {
+			    display: flex;
+			    flex-wrap: wrap;
+			    width: 90%;
+			    height: 800px;
+			    margin: 0px auto;
+			    margin-bottom: 15px; 
+			    background-color: rgb(243, 243, 243);
+			    justify-content: space-around;
+			    align-content: space-around;
+				position: relative;
+				bottom: 10px;
+			}
+			.zhuti .tj{
+			    width: 30%;
+			    height: 48%;
+			    background-color: antiquewhite;
+			    border-radius: 5px;
+			    overflow: hidden;
+			}
+			.zhuti .tj .img{
+			    /* 相对定位 */
+			    position: relative;
+			    width: 100%;
+			    height: 88%;
+			    overflow: hidden;
+			}
+			.zhuti .tj .img img{
+			    width: 100%;
+			    height: 100%;
+			    object-fit:cover;
+			    margin: 0 auto;
+			}
+			.zhuti .tj .img:hover{
+			    cursor: pointer;
+			}
+			.zhuti .tj .img:hover .mask{
+			    top: 0;
+			}
+			.zhuti .tj .img .mask{
+			    /* 绝对定位 */
+			    position: absolute;
+			    top:100%;
+			    height: 100%;
+			    width: 100%;
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    flex-direction: column;
+			    background: #464646e8;
+			    color: #fff;
+			    /* 添加过渡 */
+			    transition: all .7s ease-out;
+			}
+			.mask p{
+			    margin: 20px;
+			    font-weight: 500;
+			    overflow: hidden;
+			}
+			.zhuti .tj h3{
+			    width: 100%;
+			    line-height: 45px;
+			    text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<div id="topbar">
+			<div class="wrap"></div>
+				<div class="box">
+						<ul>
+							<li>最中国的古镇，烟火里享受生活。</li>
+							<li>穿梭在古老的街巷，品味着蕴含着风土人情的美食，感受着浓厚的民俗风情，切身体会着自然之美，融入大自然的怀抱。</li> 
+							<li>沐浴在阳光之下，你可以尽情享受着体验着大自然的无限魅力。</li>
+							<li>“水清无鱼倒影稀，山色有情人更悲。”——这里是江西婺源</li>
+						</ul>
+					</div>
+				</div>
+				<div id="logo">
+						 <div class="wrap"> 
+						 <span class="h"><img src="img/logo1.jpg" height="100px"></span>
+						 <div id="nav">
+						 				<ul class="link">
+						 						<li class="active"><a href="index.html">首页</a></li>
+						 						<li><a href="survey.html">篁岭概况</a></li>
+						 						<li><a>旅行信息</a>
+						 						<div class="sp">
+						 						        <a href="food.html">美食推荐</a>
+						 						         <a href="journey.html">旅游攻略</a>
+						 						                    </div></li>
+						 						<li><a href="culture.html">民俗文化</a></li>
+						 						<li><a href="scenery.html">风景欣赏</a></li>
+						 						<li><a href="login.html">登录</a></li>
+						 					</ul>
+							<div id="search">
+									<input type="text" name="search_text" id="search_text" placeholder="请输入要搜索的内容" />
+									<button class="button">搜索</button>
+									</div>
+						 </div>
+						</div> 
+					</div>
+		</div>
+		
+		<div class="banner">
+			<div class="sp">
+		       <video controls src="wenhua.mp4" width="100%" ></video>
+			   </div>
+		    </div>
+		
+		    <div class="zhuti">
+		        <div class="tj">
+		            <div class="img">
+		                <img src="img/c1.jpg" alt="晒秋">
+		               <!-- <a href="#" target="_blank"> -->
+		                    <div class="mask">
+		                        <p>在篁岭，晒秋不仅仅是一场庆典，更是一幅生动的故事。它是大自然与人类和谐相处的见证，是农民对农产品的珍视，更是一种文化传统的传承。每年的晒秋季节，吸引着游客前来感受这一美妙的景象，与当地村民一同庆祝丰收的季节。篁岭，晒秋美景的故事，永远定格在这个美丽地方的历史中。<br />从人文价值的角度来看，“篁岭晒秋”填补了城市人群的乡愁需求,2020年，“篁岭晒秋”被列为市级非物质文化遗产项目。</p>
+		                    </div>
+		               
+		            </div>
+		            <h3>晒秋</h3>
+		        </div>
+		        <div class="tj">
+		            <div class="img">
+		                <img src="img/c2.jpg" alt="傩舞">
+		                    <div class="mask">
+		                        <p>傩舞作为一种古老的艺术形式，其起源可追溯到周代的宫廷礼仪。在《周礼》中，我们可以找到关于“大傩”之礼的详细记载。在历史的长河中，傩舞因地域差异而展现出各具特色的风格。在婺源地区，一般在春节跳傩舞，寓意村里家家平安、五谷丰登、六畜兴旺，节目多为神话和民间传说。婺源傩舞已列入国家级非物质文化遗产名录。传承至今的婺源傩舞节目有《开天辟地》《后羿射日》《刘海戏金蟾》等30余个。</p>
+		                    </div>
+		                
+		            </div>
+		            <h3>傩舞</h3>
+		        </div>
+		        <div class="tj">
+		            <div class="img">
+		                <img src="img/c3.jpg" alt="徽剧">
+		                    <div class="mask">
+		                      <p>婺源徽剧旧称徽戏、徽调，是我国古老剧种之一，属皖南徽剧的一个支流。第一批国家级非物质文化遗产代表性项目名录传统戏剧类项目。以弋阳腔、老石牌为底子，吸收了目连戏的高腔、下江调，并结合了江西地方戏曲饶河戏的弹腔及民间小调，形成了有别于皖南徽剧的地方剧种。清末年间，婺源徽剧在赣东北的浮梁、乐平、鄱阳和浙江开化等地尤为盛行，目前流行地以婺源为中心。</p>
+		                    </div>
+		                
+		            </div>
+		            <h3>徽剧</h3>
+		        </div>
+		        <div class="tj">
+		            <div class="img">
+		                <img src="img/c4.jpg" alt="婺源三雕"> 
+		                    <div class="mask" >
+		                        <p>婺源“三雕”艺术主要附着于徽州“古建三绝”（古民居、古祠堂、石牌坊）身上，为砖、石、木三种民间雕刻艺术的总称。“三雕”艺术的应用十分广泛，涉及到明清建筑的装饰部件和家居用具等各个方面，且融装饰艺术与建筑结构为一体，互为连缀，相得益彰。但三雕艺术有别于绘画艺术，其表现形式要求以“刀”代笔，立足于一个“雕”字。2006年，婺源“三雕”被列入第一批国家级非物质文化遗产名录。</p>
+		                    </div>
+		               
+		            </div>
+		            <h3>婺源三雕</h3>
+		        </div>
+		        <div class="tj">
+		            <div class="img">
+		                <img src="img/c5.jpg" alt="板龙灯">
+		            <div class="mask">
+						<p>龙灯是正月里最盛大的汉族民俗活动之一，在婺源更是已有千年历史。在婺源方言里，灯与丁同音，迎灯亦有祝愿人丁兴旺和庆贺吉祥之意，每逢春节，县城、乡镇及许多自然山村仍遵循旧例，均有迎灯舞龙的习俗。目前已经成为省级非物质文化遗产</p>
+		                    </div>
+		            </div>
+		            <h3>板龙灯</h3>
+		        </div>
+		        <div class="tj">
+		            <div class="img">
+		                <img src="img/c6.jpg" alt="古徽婚俗">
+		                    <div class="mask"  >
+		                        <p>你感受过徽州婚俗的魅力吗?身着嫁衣的新娘盖着红盖头，由新郎一路背至新房，路上敲锣打鼓气氛热烈，途中还会在众屋广场停驻，分撒沾满喜气的喜糖和红包，新年和新婚的双重buff，将喜事热闹的氛围推向高潮。</p>
+		                    </div>
+		            
+		            </div>
+		            <h3>古徽婚俗</h3>
+		        </div>
+		        
+		    </div>
+		
+		<div id="footer">
+		<p>版权声明:@小鲤鱼泡泡&nbsp;|&nbsp;联系方式：<a href="mailto:">li041202@qq.com</a>&nbsp;|&nbsp;关于我们
+		        <br>
+		        <sup>
+					&copy;版权所有：李馨馨20220000599</sup>
+		        </p>
+			</div>
+		</div>
+		<script>
+					//实现滚动文字效果
+					var speed = -1;
+					var list = document.getElementsByTagName('ul')[0]; //获取ul元素
+					var item = document.getElementsByTagName('li');    //获取li元素集合
+					list.innerHTML = list.innerHTML + list.innerHTML;
+					list.style.width = item[0].offsetWidth * item.length + 'px'; //offsetWidth返回元素的宽度（包括元素宽度、内边距和边框，不包括外边距）
+					function move() {
+						if (list.offsetLeft < -list.offsetWidth / 2) {   //offsetLeft元素离父元素左边的距离
+							list.style.left = 0 + "px";
+						}
+						list.style.left = list.offsetLeft + speed + 'px';
+					}
+					setInterval(move, 30);     //每隔30ms移动一次
+				</script>
+	</body>
+</html>

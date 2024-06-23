@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>篁岭概述</title>
+		<style>
+			* {
+			    margin: 0;
+			    padding: 0;
+			    list-style: none;
+			    text-decoration: none;
+			}
+			body{
+				background-image:url("img/s1.jpg");
+				background-size: cover;
+			}
+			#header{
+				height: 135px;	
+			}
+			#header #logo{
+			     height: 100px;
+			     width:100%;
+				background-color: rgb(144,116,102);
+						}
+			#header #topbar{
+				height: 35px;	
+				} 
+			.box {
+				position: relative;      /* 相对定位 */				
+				width: 100%;
+				height: 40px;
+				line-height: 30px;
+				background-color: #705934;
+				margin: 20px auto;
+				overflow: hidden;        /* 溢出内容隐藏 */				
+				}
+			.box ul {
+				position: absolute;      /* 绝对定位 */				
+				left: 0;
+				top: 0;
+				}
+			.box ul li {
+				float: left;
+				margin-right: 15px;      /* 让每个条目右侧空15px */				
+				color: #ffffff;
+				font-size: 18px;
+				margin-top: 8px;
+				}
+			#logo .wrap  {
+				height:100%;
+				width: 100%;						
+				} 
+			#container #nav{
+				background: rgb(144,116,102);								
+			    width: 100%;
+				}						
+			#nav ul li a{
+				position: relative;
+				bottom:70px;
+				 left:250px;
+			    display: block;
+			    height: 100%;
+			    padding: 0 22px;
+			    line-height: 55px;
+			    text-align: center;
+			    color: aliceblue;
+				font-size: 20px;
+			}					
+			#nav ul{
+			    height: 100%;
+			    margin-left: 1%;
+			}
+			#nav ul li{
+			    position: relative;
+			    float: left;
+			}
+			#nav ul li a:hover{
+				color:  #CFB09A;
+			} 
+			#nav ul li .sp{
+			    position: absolute;
+			    width: 100%;
+			    height: 40px;
+			    display: none;
+				z-index:10;
+			}
+			#nav ul li .sp a{
+			    line-height: 40px;
+			    background-color: rgba(144,116,102,0.9);
+			
+			}
+			#nav ul li:hover>.sp{
+			    display: block;
+			}
+			#footer {
+			    display: flex;
+			    width: 100%;
+			    height: 80px;
+			    align-items: center;/* 针对每个子项都居中 */
+			    justify-content: center;
+			    background-color:rgb(144,116,102);
+			}
+			#footer p{
+			    text-align: center;
+			}
+			#footer a{
+			    color: #000;
+			}
+			#footer a:hover{
+			    text-decoration: underline;
+			}	
+			#header #search{
+				position: absolute;
+				left:0;
+				right: 0;
+				width: 400px;
+				margin:-60px 930px; 
+				opacity: 80%;
+			}
+			 #header #search_text{
+				font-family: "myfont1";
+				font-size: 16px;
+				height: 30px;
+				width: 300px;
+				padding-left:10px;
+				outline: none;
+				border: 1px solid #ccc;
+			}
+			 #search .button{
+				width:90px;
+				height:35px;
+				position: absolute;
+				top:10%;
+				left: 50%;
+				margin:-5px 110px;
+				 color:#666;
+				background-color: #fff;
+				font-size: 20px;
+				 border:1px solid #C8E0C8;
+				/* cursor: pointer; */
+			}		
+			#search .button:hover{
+				background-color: #d7b9b1;
+				color:#fff;
+			}
+			#banner{
+			    width: 90%;
+			    height: 600px;
+			    margin:0 auto;
+				position: relative;
+				overflow: hidden;
+				 bottom:30px;
+			}
+			#banner img{
+			    display: block;
+			    width: 100%;
+			    height:600px;
+			    object-fit:cover;
+			}
+			
+			.main{
+			    width: 90%;
+			    height: 400px;
+			    margin: 10px auto;
+			  position: relative;
+			 bottom:15px;
+			    background:rgb(240,240,240);
+			}
+			.main .img{
+			    width: 40%;
+			    height:100%;
+			    float:right;
+			    overflow: hidden;
+			}
+			.main img{
+			    width: 100%;
+			    height: 100%;
+			    object-fit:cover;
+			}
+			.main img:hover{
+			    transform: scale(1.10);
+			    
+			}
+			.main .jieshao{
+			    width: 58%;
+			    float:left;
+			    height: 100%;
+				margin:10 auto;
+				 left: 5px;
+			}
+			 .main .jieshao .wz{
+			    overflow: auto;
+			    height: 90%;
+				position: relative;
+				  top: 20px;
+				
+			} 
+			.main .jieshao p{
+			    line-height: 30px;
+			    text-indent: 2em;
+				font-size: 23px;
+				font-family: 楷体;
+			}			
+			
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<div id="topbar">
+			<div class="wrap"></div>
+				<div class="box">
+						<ul>
+							<li>最中国的古镇，烟火里享受生活。</li>
+							<li>穿梭在古老的街巷，品味着蕴含着风土人情的美食，感受着浓厚的民俗风情，切身体会着自然之美，融入大自然的怀抱。</li> 
+							<li>沐浴在阳光之下，你可以尽情享受着体验着大自然的无限魅力。</li>
+							<li>“水清无鱼倒影稀，山色有情人更悲。”——这里是江西婺源</li>
+						</ul>
+					</div>
+				</div>
+				<div id="logo">
+						 <div class="wrap"> 
+						 <span class="h"><img src="img/logo1.jpg" height="100px"></span>
+						 <div id="nav">
+						 				<ul class="link">
+						 						<li class="active"><a href="index.html">首页</a></li>
+						 						<li><a href="survey.html">篁岭概况</a></li>
+						 						<li><a>旅行信息</a>
+						 						<div class="sp">
+						 						        <a href="food.html">美食推荐</a>
+						 						         <a href="journey.html">旅游攻略</a>
+						 						                    </div></li>
+						 						<li><a href="culture.html">民俗文化</a></li>
+						 						<li><a href="scenery.html">风景欣赏</a></li>
+						 						<li><a href="login.html">登录</a></li>
+						 					</ul>
+							<div id="search">
+									<input type="text" name="search_text" id="search_text" placeholder="请输入要搜索的内容" />
+									<button class="button">搜索</button>
+									</div>
+						 </div>
+						</div> 
+					</div>
+		</div>
+		<div id="banner">
+				<ul id="list">
+			<li><img src="img/sbanner1.jpg" /></li>
+			<li><img src="img/sbanner2.jpg" /></li>
+			<li><img src="img/sbanner3.jpg"  /></li>
+			</ul>
+		</div>
+		<div class="main">
+			<div class="img">
+				<img src="img/sbanner2.jpg"  />
+			</div>
+			 <div class="jieshao">
+		 <div class="wz">
+		                    <p>
+		                     篁岭村，位于江西省上饶市婺源县江湾镇东南7公里的石耳山脉，面积约5平方公里，距婺源县城距离39公里，江湾高速出口距离约9公里。   
+		                    </p>
+		                    <p>
+		                     至今已有近600年历史，是婺源具有独特风格的徽派古村落之一。篁岭梯田叠翠铺绿，村庄聚气巢云，被称为“梯云人家”。篁岭属典型山居村落，民居围绕水口呈扇形梯状错落排布，景区由索道空中揽胜、村落天街访古、梯田花海寻芳及乡风民俗拾趣等游览区域组合而成。  
+		                    </p>
+		                    <p>
+		                     2014年5月15日， 篁岭景区被评为国家AAAA级旅游景区。2023年10月19日， 入选联合国世界旅游组织全体大会公布的2023年联合国世界旅游组织“最佳旅游乡村”名单。
+		                    <p>
+							篁岭村地处海拔500米的石耳山上，曾经被称为“挂在山崖上的村庄”，“地无三尺平”的地势晒架上晾晒农作物，每个季节晾晒的都不同，春晒笋干、夏晒果蔬、秋晒作物、冬晒乡俗，一年四季延绵有序，尤其是在秋季，数百栋徽派古民民居土砖外墙与晒架上五彩缤纷的丰收果实，组合成了极富视觉冲击力的色彩变化，建筑与竹簟的方圆对比，成为篁岭村的独特文化符号。
+							</p>
+		                       
+		        </div>
+					</div>
+		</div>
+		
+		<div id="footer">
+		<p>版权声明:@小鲤鱼泡泡&nbsp;|&nbsp;联系方式：<a href="mailto:">li041202@qq.com</a>&nbsp;|&nbsp;关于我们
+		        <br>
+		        <sup>
+					&copy;版权所有：李馨馨20220000599</sup>
+		        </p>
+			</div>
+		</div>
+		<script>
+					//实现滚动文字效果
+					var speed = -1;
+					var list = document.getElementsByTagName('ul')[0]; //获取ul元素
+					var item = document.getElementsByTagName('li');    //获取li元素集合
+					list.innerHTML = list.innerHTML + list.innerHTML;
+					list.style.width = item[0].offsetWidth * item.length + 'px'; //offsetWidth返回元素的宽度（包括元素宽度、内边距和边框，不包括外边距）
+					function move() {
+						if (list.offsetLeft < -list.offsetWidth / 2) {   //offsetLeft元素离父元素左边的距离
+							list.style.left = 0 + "px";
+						}
+						list.style.left = list.offsetLeft + speed + 'px';
+					}
+					setInterval(move, 30);     //每隔30ms移动一次
+		</script>
+	</body>
+</html>
